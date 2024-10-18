@@ -9,12 +9,12 @@ namespace Tyuiu.PlatonovaPE.Sprint3.Task0.V22.Test
         {
             DataService ds = new DataService();
             double value = 0.25;
-            int startValue = 2;
-            int stopValue = 7;
+            int startValue = 1;
+            int stopValue = 8;
 
             double res = ds.GetMultiplySeries(value,startValue, stopValue);
 
-            double wait = 32.607;
+            double wait = 6.747;
 
             Assert.AreEqual(wait, res);
         }
