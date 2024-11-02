@@ -8,7 +8,7 @@ namespace Tyuiu.PlatonovaPE.Sprint3.Task1.V25.Lib
             double multSeries = 1;
             while (startValue <= stopValue)
             {
-                multSeries = multSeries + ((Math.Pow(value, startValue) - 1 / 4) * Math.Cos(5));
+                multSeries = multSeries + (((Math.Pow(value, startValue) - 1/4)) * Math.Cos(5));
                 startValue++;
 
             }
