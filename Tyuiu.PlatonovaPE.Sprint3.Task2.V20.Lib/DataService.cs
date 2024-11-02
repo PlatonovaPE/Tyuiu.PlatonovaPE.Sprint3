@@ -8,10 +8,10 @@ namespace Tyuiu.PlatonovaPE.Sprint3.Task2.V20.Lib
         double MultiplySeries = 1;
         do
         {
-            MultiplySeries = MultiplySeries * Math.Pow((2 / Math.Cos(value) + 0.5), startValue);
+            MultiplySeries = MultiplySeries * Math.Pow((2 / (Math.Cos(value) + 0.5)), startValue);
             startValue++;
         } while (startValue <= stopValue);
-        return Math.Round(MultiplySeries, 3);
+        return Math.Round(MultiplySeries, 2);
 
         }
     }
