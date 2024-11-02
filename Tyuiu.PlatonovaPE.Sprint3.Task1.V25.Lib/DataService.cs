@@ -6,7 +6,7 @@ namespace Tyuiu.PlatonovaPE.Sprint3.Task1.V25.Lib
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
             double multSeries = 1;
-            startValue = 1;
+            startValue = 0;
             while (startValue <= stopValue)
             {
                 multSeries *= ((Math.Pow(value, startValue) - 1/4)) * Math.Cos(5);
