@@ -9,11 +9,11 @@ namespace Tyuiu.PlatonovaPE.Sprint3.Task6.V8.Lib
             int sum = 0;
             for (x = startValue; x <= stopValue; x++)
             {
-                for (int d = 1; d <= x; x++)
+                for (int d = 1; d <= x; d++)
                 {
-                    if (x % d == 0 & d > 11)
+                    if (x % d == 0 && d > 11)
                     {
-                        sum += d;
+                        sum =  sum + d;
                     }
                 }
             }

@@ -21,8 +21,8 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* Результат:                                                                   *");
 Console.WriteLine("********************************************************************************");
 
-int sum = 292;
-Console.WriteLine("Сумма  = " + sum);
+
+Console.WriteLine("Сумма  = " + ds.GetSumTheDivisors(startValue, stopValue));
 
 Console.ReadKey();
 
