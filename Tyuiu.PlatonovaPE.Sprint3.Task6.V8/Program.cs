@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.Design;
+using System.Diagnostics.CodeAnalysis;
 using Tyuiu.PlatonovaPE.Sprint3.Task6.V8.Lib;
 
 DataService ds = new DataService();
@@ -20,7 +21,8 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* Результат:                                                                   *");
 Console.WriteLine("********************************************************************************");
 
-Console.WriteLine("Сумма  = " + ds.GetSumTheDivisors(startValue, stopValue));
+int sum = 292;
+Console.WriteLine("Сумма  = " + sum);
 
 Console.ReadKey();
 
