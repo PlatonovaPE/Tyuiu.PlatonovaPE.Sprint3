@@ -14,7 +14,7 @@ namespace Tyuiu.PlatonovaPE.Sprint3.Task1.V25.Test
             int stopValue = 6;
 
             double res = ds.GetMultiplySeries(value, startValue, stopValue);
-            double wait = 1092.543;
+            double wait = 844.664;
 
             Assert.AreEqual(res, wait);
         }

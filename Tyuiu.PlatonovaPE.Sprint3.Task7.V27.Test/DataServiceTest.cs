@@ -15,6 +15,7 @@ namespace Tyuiu.PlatonovaPE.Sprint3.Task7.V27.Test
             int len = stopValue - startValue + 1;
 
             double[] valueWaitArray = new double[len];
+
             valueWaitArray = new double[len];
 
             valueWaitArray[0] = -15.44;
