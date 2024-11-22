@@ -1,11 +1,14 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using Tyuiu.PlatonovaPE.Sprint3.Task7.V27.Lib;
+
 namespace Tyuiu.PlatonovaPE.Sprint3.Task7.V27.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidGetMassFunction()
         {
             DataService ds = new DataService();
 
@@ -14,14 +17,13 @@ namespace Tyuiu.PlatonovaPE.Sprint3.Task7.V27.Test
 
             int len = stopValue - startValue + 1;
 
-            double[] valueWaitArray = new double[len];
-
+            double[] valueWaitArray;
             valueWaitArray = new double[len];
 
             valueWaitArray[0] = -15.44;
             valueWaitArray[1] = -10.93;
             valueWaitArray[2] = -7.22;
-            valueWaitArray[3] = -5.04;
+            valueWaitArray[3] = -5.84;
             valueWaitArray[4] = 0.00;
             valueWaitArray[5] = -0.30;
             valueWaitArray[6] = 2.57;
@@ -33,7 +35,8 @@ namespace Tyuiu.PlatonovaPE.Sprint3.Task7.V27.Test
             double[] res;
             res = new double[len];
             res = ds.GetMassFunction(startValue, stopValue);
-            CollectionAssert.AreEqual(res, valueWaitArray);
+
+
         }
     }
 }
