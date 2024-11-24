@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using tyuiu.cources.programming.interfaces.Sprint3;
+﻿using tyuiu.cources.programming.interfaces.Sprint3;
 namespace Tyuiu.PlatonovaPE.Sprint3.Task7.V27.Lib
 {
     public class DataService : ISprint3Task7V27
@@ -15,16 +10,21 @@ namespace Tyuiu.PlatonovaPE.Sprint3.Task7.V27.Lib
             valueArray = new double[len];
             double y;
             int count = 0;
-
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Cos(x) / (x + 1) - Math.Cos(x) * 1.3 + 3 * x;
-                y = Math.Round(y, 2);
+                double denominator = x + 1;
+                    if (denominator == 0)
+                {
+                    y = 0;
+                }
+                    else
+                {
+                    y = Math.Round(Math.Cos(x) / denominator - Math.Cos(x) * 1.3 + 3 * x, 2);
+                }
                 valueArray[count] = y;
                 count++;
             }
             return valueArray;
-
         }
     }
 }
